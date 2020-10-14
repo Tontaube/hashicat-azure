@@ -97,6 +97,7 @@ resource "azurerm_virtual_machine" "catapp" {
 
   tags = {
     Department = "devops"
+    Billable = "true"
   }
 
   network_interface_ids         = [azurerm_network_interface.catapp-nic.id]
